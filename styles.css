@@ -19,7 +19,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -41,8 +40,8 @@ blockquote, q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote::before, blockquote::after,
+q::before, q::after {
   content: "";
   content: none;
 }
@@ -53,13 +52,13 @@ table {
 }
 
 .content {
-  font-family: "Manrope", sans-serif;
+  font-family: Manrope, sans-serif;
   font-weight: 600;
   font-size: 48px;
   line-height: 100%;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   vertical-align: middle;
-  color: #000000;
+  color: #000;
 }
 
 /*# sourceMappingURL=styles.css.map */
