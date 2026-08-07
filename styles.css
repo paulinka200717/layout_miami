@@ -58,7 +58,21 @@ table {
   line-height: 100%;
   letter-spacing: 0;
   vertical-align: middle;
-  color: #000;
+  color: #ffffff;
+}
+
+.header {
+  background-color: #000000;
+  background-image: url(../images/header-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=styles.css.map */
