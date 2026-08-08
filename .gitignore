@@ -1,5 +1,15 @@
-styles.css
-styles.css.map
-node_modules/
+# IDE
+.idea
+.vscode
+
+# Node
+node_modules
+
+# MacOS
 .DS_Store
-*.log
+
+# Generated files
+backstop_data
+dist
+.cache
+.parcel-cache
