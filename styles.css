@@ -75,7 +75,7 @@ table {
 
 .header {
   background-color: #000;
-  background-image: url("../../images/Image.png");
+  background-image: url("../images/Image.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
