@@ -17,6 +17,16 @@
     letter-spacing: 0;
     vertical-align: middle;
     color: #1B2129;
-    padding: 64px 20px;
+  }
+
+  &--third {
+    font-family: Manrope, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0;
+    paragraph-spacing: 1px;
+    vertical-align: middle;
+    color: #1B2129;
   }
 }
