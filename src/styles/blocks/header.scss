@@ -1,13 +1,15 @@
 
 .header {
   background-image: url("/src/images/header.png");
+  background-color: blue;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
-  max-width: 744px;
+  max-width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content:flex-end;
+  box-sizing: border-box;
 }

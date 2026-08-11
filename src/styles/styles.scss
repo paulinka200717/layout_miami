@@ -6,9 +6,16 @@
 @import './blocks/button';
 
 .body {
-  max-width: 744;
-  min-height: 993;
+  max-width: 100%;
+  min-height: 100vh;
   box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+  .header {
+    max-width: 100%;
+  }
+}
+
 
 
