@@ -1,6 +1,7 @@
 .summary {
   display: flex;
   flex-direction: row;
+  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
   padding: 24px;
@@ -19,8 +20,7 @@
     letter-spacing: 0;
     width: 287px;
     color: #1B2129;
-;
-    }
+  }
 
   &__text2 {
     font-family: Manrope, sans-serif;
