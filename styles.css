@@ -97,6 +97,10 @@ table {
 .items {
   font-family: Manrope, sans-serif;
   font-weight: 700;
+  width: 600;
+  height: 757;
+  opacity: 1;
+  border-radius: 4px;
 }
 .items__title {
   font-family: Manrope, sans-serif;
@@ -142,6 +146,32 @@ table {
   letter-spacing: 0;
   width: 600px;
   height: 34px;
+}
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  width: 600px;
+  height: 56px;
+  line-height: 56px;
+  opacity: 1;
+  border: 2px solid #F98921;
+  background-color: #F98921;
+  border-radius: 8px;
+  text-align: center;
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #FFF;
+}
+
+.body {
+  max-width: 744;
+  min-height: 993;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=styles.css.map */
