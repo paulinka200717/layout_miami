@@ -86,13 +86,12 @@ table {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 744px;
-  min-height: 993px;
+  width: 100%;
+  max-width: 744px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  box-sizing: border-box;
-  position: relative;
 }
 
 .items {
