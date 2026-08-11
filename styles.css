@@ -61,6 +61,7 @@ table {
   vertical-align: middle;
   color: #fff;
   padding: 40px 20px;
+  width: 600px;
 }
 .title--secondary {
   font-family: Manrope, sans-serif;
@@ -88,12 +89,21 @@ table {
   background-size: cover;
   background-position: center;
   width: 100%;
-  max-width: 100%;
+  max-width: 600px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   box-sizing: border-box;
+}
+.header__icons {
+  display: flex;
+  justify-content: flex-end;
+}
+.header__icon {
+  display: flex;
+  height: 18px;
+  width: 18px;
 }
 
 .items {
@@ -176,16 +186,33 @@ table {
   color: #FFF;
 }
 
-.body {
-  max-width: 100%;
-  min-height: 100vh;
-  box-sizing: border-box;
+.summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  width: 100%;
+  max-width: 600px;
+  height: 416px;
+  background-color: #FCFAEF;
+  gap: 24px;
 }
-
-@media (max-width: 768px) {
-  .header {
-    max-width: 100%;
-  }
+.summary__text1 {
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0;
+  width: 287px;
+  color: #1B2129;
+}
+.summary__text2 {
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  width: 288px;
 }
 
 /*# sourceMappingURL=styles.css.map */

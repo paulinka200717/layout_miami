@@ -1,7 +1,9 @@
 .section {
+  width: 100%;
+  max-width: 600px;
+  display: inline;
+  box-sizing: border-box;
 
-  &__image {
-    width: 100%;
-    max-width: 600px;
-  }
+
+
 }

@@ -1,4 +1,14 @@
 .summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  width: 100%;
+  max-width: 600px;
+  height: 416px;
+  background-color: #FCFAEF;
+  gap: 24px;
 
   &__text1 {
     font-family: Manrope, sans-serif;
@@ -7,11 +17,15 @@
     font-size: 40px;
     line-height: 100%;
     letter-spacing: 0;
-  }
+    width: 287px;
+    color: #1B2129;
+;
+    }
 
   &__text2 {
     font-family: Manrope, sans-serif;
-
-
+    font-size: 16px;
+    letter-spacing: 0.15px;
+    width: 288px;
   }
 }
