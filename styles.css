@@ -221,4 +221,12 @@ table {
   max-width: 600px;
 }
 
+.body {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
 /*# sourceMappingURL=styles.css.map */
