@@ -94,16 +94,33 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  box-sizing: border-box;
+  align-items: flex-start;
+  position: relative;
+}
+.header__title {
+  position: absolute;
+  height: 96px;
+  width: 392px;
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #fff;
 }
 .header__icons {
   display: flex;
-  justify-content: flex-end;
+  position: absolute;
+  top: 36px;
+  right: 72px;
+  gap: 36px;
+  align-items: center;
 }
 .header__icon {
-  display: flex;
   height: 18px;
   width: 18px;
+  object-fit: contain;
 }
 
 .items {
