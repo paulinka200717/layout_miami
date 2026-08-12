@@ -93,12 +93,20 @@ table {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
   position: relative;
+  justify-content: space-between;
+}
+.header__top {
+  justify-content: space-between;
+}
+.header__logo {
+  left: 72px;
+  top: 36px;
+  position: absolute;
+  justify-content: flex-start;
+  justify-content: space-between;
 }
 .header__title {
-  position: absolute;
   height: 96px;
   width: 392px;
   font-family: Manrope, sans-serif;
@@ -106,8 +114,12 @@ table {
   font-size: 48px;
   line-height: 100%;
   letter-spacing: 0;
-  vertical-align: middle;
   color: #fff;
+  display: inline-block;
+  text-align: start;
+  padding-bottom: 64px;
+  padding-left: 72px;
+  padding-top: 833px;
 }
 .header__icons {
   display: flex;
