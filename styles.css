@@ -259,6 +259,25 @@ table {
   max-width: 600px;
 }
 
+.adress__label {
+  font-family: Manrope;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+  color: #9FADC2;
+}
+.adress__content {
+  font-family: Manrope;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+  color: #3E3E3E;
+}
+
 .body {
   margin: 0;
   display: inline-block;
