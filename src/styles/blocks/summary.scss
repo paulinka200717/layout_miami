@@ -6,7 +6,6 @@
   align-items: center;
   padding: 24px;
   width: 100%;
-  max-width: 600px;
   height: 416px;
   background-color: #FCFAEF;
   gap: 24px;
@@ -18,7 +17,7 @@
     font-size: 40px;
     line-height: 100%;
     letter-spacing: 0;
-    width: 287px;
+    width: 100%;
     color: #1B2129;
   }
 
@@ -26,6 +25,6 @@
     font-family: Manrope, sans-serif;
     font-size: 16px;
     letter-spacing: 0.15px;
-    width: 288px;
+    width: 100%;
   }
 }
