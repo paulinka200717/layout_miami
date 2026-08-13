@@ -260,7 +260,7 @@ table {
 }
 
 .adress__label {
-  font-family: Manrope;
+  font-family: Manrope, sans-serif;
   font-weight: 400;
   font-style: Regular;
   font-size: 14px;
@@ -269,7 +269,7 @@ table {
   color: #9FADC2;
 }
 .adress__content {
-  font-family: Manrope;
+  font-family: Manrope, sans-serif;
   font-weight: 400;
   font-style: Regular;
   font-size: 16px;
