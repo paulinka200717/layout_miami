@@ -1,0 +1,14 @@
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding-top: 36px;
+    right: 72px;
+    gap: 36px;
+    align-items: center;
+
+    &__icon {
+      height: 18px;
+      width: 18px;
+    }
+}
