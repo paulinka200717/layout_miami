@@ -352,6 +352,11 @@ table {
   width: 18px;
 }
 
+.menu {
+  background-color: #F9F9F9;
+  padding-left: 72px;
+}
+
 .body {
   margin: 0;
   display: inline-block;
