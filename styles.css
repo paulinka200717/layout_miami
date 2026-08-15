@@ -368,6 +368,7 @@ table {
 .menu__logo-image {
   height: 24px;
   width: auto;
+  padding-top: 36px;
 }
 .menu__icon-image {
   height: 32px;
@@ -391,7 +392,7 @@ table {
   padding-bottom: 4px;
   text-decoration: none;
   border-bottom: 1px solid #1B2129;
-  font-family: Manrope;
+  font-family: Manrope, sans-serif;
   font-weight: 700;
   font-style: Bold;
   font-size: 16px;
@@ -404,6 +405,9 @@ table {
   cursor: url("/src/images/Cursor-Mouse-Mice.png"), auto;
 }
 
+.links {
+  padding-top: 56px;
+}
 .links__list {
   display: flex;
   flex-direction: column;
