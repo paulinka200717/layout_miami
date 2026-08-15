@@ -355,8 +355,28 @@ table {
 
 .menu {
   background-color: #F9F9F9;
-  padding-top: 36px;
-  padding-left: 72px;
+  padding-top: 24px;
+  padding-left: 120px;
+  padding-right: 124px;
+}
+.menu__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__logo {
+  display: block;
+}
+.menu__icon {
+  display: block;
+}
+.menu__logo-image {
+  height: 24px;
+  width: auto;
+}
+.menu__icon-image {
+  height: 32px;
+  width: 32px;
 }
 
 .body {
