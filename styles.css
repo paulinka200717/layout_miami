@@ -364,12 +364,6 @@ table {
   align-items: center;
   justify-content: space-between;
 }
-.menu__logo {
-  display: block;
-}
-.menu__icon {
-  display: block;
-}
 .menu__logo-image {
   height: 24px;
   width: auto;
