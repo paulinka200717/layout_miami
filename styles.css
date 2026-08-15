@@ -358,6 +358,12 @@ table {
   padding-top: 24px;
   padding-left: 120px;
   padding-right: 124px;
+  min-height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+.menu:target {
+  transform: translateX(0);
 }
 .menu__navigation {
   display: flex;
