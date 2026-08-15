@@ -373,6 +373,36 @@ table {
   height: 32px;
   width: 32px;
 }
+.menu__paragraph {
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 48px;
+  padding-bottom: 16px;
+}
+.menu__paragraph:hover {
+  cursor: url("/src/images/Cursor-Mouse-Mice.png"), auto;
+}
+.menu__call-link {
+  padding-bottom: 4px;
+  text-decoration: none;
+  border-bottom: 1px solid #1B2129;
+  font-family: Manrope;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1B2129;
+}
+.menu__call-link:hover {
+  cursor: url("/src/images/Cursor-Mouse-Mice.png"), auto;
+}
 
 .links__list {
   display: flex;
@@ -392,6 +422,12 @@ table {
   line-height: 22px;
   letter-spacing: 0;
   color: #1B2129;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+}
+.links__link:hover {
+  border-bottom: 1px solid #1B2129;
+  cursor: url("/src/images/Cursor-Mouse-Mice.png"), auto;
 }
 
 .body {

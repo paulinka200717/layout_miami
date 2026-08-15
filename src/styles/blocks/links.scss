@@ -20,5 +20,12 @@
     line-height: 22px;
     letter-spacing: 0;
     color: #1B2129;
+    border-bottom: 1px solid transparent;
+    display: inline-block;
+
+    &:hover {
+      border-bottom: 1px solid #1B2129;
+      cursor: url("/src/images/Cursor-Mouse-Mice.png"), auto;
+    }
   }
 }

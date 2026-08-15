@@ -21,4 +21,40 @@
     height: 32px;
     width: 32px;
   }
+
+  &__paragraph {
+    font-family: Manrope, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 48px;
+    padding-bottom: 16px;
+
+    &:hover {
+      cursor: url("/src/images/Cursor-Mouse-Mice.png"), auto;
+    }
+
+  }
+
+  &__call-link {
+    padding-bottom: 4px;
+    text-decoration: none;
+    border-bottom: 1px solid #1B2129;
+    font-family: Manrope;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1B2129;
+
+    &:hover {
+      cursor: url("/src/images/Cursor-Mouse-Mice.png"), auto;
+    }
+
+  }
 }
