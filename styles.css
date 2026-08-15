@@ -363,6 +363,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 36px;
 }
 .menu__logo-image {
   height: 24px;
@@ -371,6 +372,26 @@ table {
 .menu__icon-image {
   height: 32px;
   width: 32px;
+}
+
+.links__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.links__links {
+  display: flex;
+  gap: 32px;
+}
+.links__link {
+  font-family: Manrope, sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #1B2129;
 }
 
 .body {
