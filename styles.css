@@ -364,6 +364,7 @@ table {
   transition: transform 0.3s ease-in-out;
 }
 .menu:target {
+  display: block;
   transform: translateX(0);
 }
 .menu__navigation {

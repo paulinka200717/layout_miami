@@ -9,6 +9,7 @@
   transition: transform 0.3s ease-in-out;
 
   &:target {
+    display: block;
     transform: translateX(0);
   }
 
