@@ -1,14 +1,30 @@
   .navigation {
     display: flex;
-    justify-content: space-between;
-    position: absolute;
-    padding-top: 36px;
-    right: 72px;
-    gap: 36px;
     align-items: center;
+    padding-top: 24px;
+    padding-left: 120px;
+    padding-right: 124px;
+    justify-content: space-between;
+
+
+
+    &__logo {
+    left: 72px;
+    top: 36px;
+    }
+
+    &__icons {
+    display: flex;
+    gap: 68px;
+    margin-left: auto;
+    }
 
     &__icon {
-      height: 18px;
-      width: 18px;
+    height: 18px;
+    width: 18px;
     }
+
+
+
+
 }
