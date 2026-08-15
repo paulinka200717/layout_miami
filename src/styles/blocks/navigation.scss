@@ -1,8 +1,8 @@
   .navigation {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-left: 120px;
+    padding-top: 32px;
+    padding-left: 76px;
     padding-right: 124px;
     justify-content: space-between;
 
@@ -11,17 +11,18 @@
     &__logo {
     left: 72px;
     top: 36px;
+    height: 24px;
     }
 
     &__icons {
     display: flex;
-    gap: 68px;
+    gap: 36px;
     margin-left: auto;
     }
 
     &__icon {
-    height: 18px;
-    width: 18px;
+    height: 32px;
+    width: 32px;
     }
 
 
