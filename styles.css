@@ -91,10 +91,7 @@ table {
   line-height: 100%;
   letter-spacing: 0;
   color: #1B2129;
-  padding-top: 120px;
-  padding-bottom: 56px;
-  padding-left: 74px;
-  padding-right: 174px;
+  padding: 120px 174px 56px 74px;
 }
 
 .header {
