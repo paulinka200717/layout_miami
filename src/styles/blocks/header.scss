@@ -8,13 +8,15 @@
   width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   position: relative;
+  flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
 
 
   &__title {
-    height: 96px;
+    display: flex;
+    margin: 0;
     width: 100%;
     box-sizing: border-box;
     font-family: Manrope, sans-serif;
@@ -23,11 +25,11 @@
     line-height: 100%;
     letter-spacing: 0;
     color: #fff;
-    display: inline-block;
-    text-align: start;
     padding-bottom: 64px;
     padding-left: 72px;
-    padding-top: 737px;
+    margin-top: auto;
+
+
   }
 
 }

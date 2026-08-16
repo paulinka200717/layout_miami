@@ -2,6 +2,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -104,12 +108,12 @@ table {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  position: relative;
   justify-content: space-between;
 }
 .header__title {
   height: 96px;
-  width: 392px;
+  width: 100%;
+  box-sizing: border-box;
   font-family: Manrope, sans-serif;
   font-weight: 700;
   font-size: 48px;
@@ -265,8 +269,14 @@ table {
 }
 
 .instruments {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding-top: 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
 }
 
 .adress {
@@ -352,6 +362,7 @@ table {
 }
 
 .main {
+  width: 100%;
   margin-left: 72px;
   margin-right: 72px;
 }
@@ -471,9 +482,15 @@ table {
   cursor: url("/src/images/Cursor-Mouse-Mice.png"), auto;
 }
 
+.html {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
 .body {
   margin: 0;
-  display: inline-block;
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box;
