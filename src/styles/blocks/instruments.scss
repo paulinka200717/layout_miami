@@ -1,4 +1,10 @@
 .instruments {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding-top: 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
 }
