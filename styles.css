@@ -391,6 +391,11 @@ table {
 .navigation__icon {
   height: 32px;
   width: 32px;
+  transition: transform 0.3s, cursor 0.3s;
+}
+.navigation__icon:hover {
+  cursor: url("../../images/Cursor-Mouse-Mice.png"), auto;
+  transform: scale(1.1);
 }
 
 .menu {
