@@ -15,7 +15,8 @@
 
   &__title {
     height: 96px;
-    width: 392px;
+    width: 100%;
+    box-sizing: border-box;
     font-family: Manrope, sans-serif;
     font-weight: 700;
     font-size: 48px;
