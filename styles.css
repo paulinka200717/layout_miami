@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-*, *::before, *::after {
+* {
   box-sizing: border-box;
 }
 
@@ -62,20 +62,16 @@ table {
   font-size: 36px;
   line-height: 100%;
   letter-spacing: 0;
-  vertical-align: middle;
   color: #fff;
   padding: 40px 20px;
   width: 100%;
+  max-width: 100vh;
 }
 .title--secondary {
-  font-family: Manrope, sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 100%;
-  letter-spacing: 0;
-  vertical-align: middle;
   color: #1B2129;
   padding-bottom: 56px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .title--third {
   font-family: Manrope, sans-serif;
@@ -86,6 +82,7 @@ table {
   vertical-align: middle;
   color: #1B2129;
   padding-bottom: 56px;
+  width: 100%;
 }
 .title--fourth {
   font-family: Manrope, sans-serif;
@@ -107,11 +104,14 @@ table {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 .header__title {
-  height: 96px;
+  display: flex;
+  margin: 0;
   width: 100%;
   box-sizing: border-box;
   font-family: Manrope, sans-serif;
@@ -120,11 +120,9 @@ table {
   line-height: 100%;
   letter-spacing: 0;
   color: #fff;
-  display: inline-block;
-  text-align: start;
   padding-bottom: 64px;
   padding-left: 72px;
-  padding-top: 737px;
+  margin-top: auto;
 }
 
 .items {
@@ -134,6 +132,7 @@ table {
   height: 757;
   opacity: 1;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 .items__title {
   font-family: Manrope, sans-serif;
@@ -146,6 +145,7 @@ table {
   text-transform: uppercase;
   width: 100%;
   padding-bottom: 8px;
+  box-sizing: content-box;
 }
 .items__text {
   font-family: Manrope, sans-serif;
@@ -155,8 +155,8 @@ table {
   line-height: 140%;
   letter-spacing: 0.15px;
   width: 100%;
-  height: 44px;
   padding-bottom: 12px;
+  box-sizing: border-box;
 }
 .items__price {
   font-family: Manrope, sans-serif;
@@ -166,8 +166,8 @@ table {
   line-height: 140%;
   letter-spacing: 0;
   width: 100%;
-  height: 22px;
   padding-bottom: 56px;
+  box-sizing: border-box;
 }
 .items__image {
   width: 100%;
@@ -197,7 +197,6 @@ table {
 }
 .gallery__image {
   width: 100%;
-  display: block;
 }
 
 .button {
@@ -245,7 +244,6 @@ table {
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
-  padding: 24px;
   width: 100%;
   height: 416px;
   background-color: #FCFAEF;
@@ -260,12 +258,14 @@ table {
   letter-spacing: 0;
   width: 100%;
   color: #1B2129;
+  padding-left: 73px;
 }
 .summary__text2 {
   font-family: Manrope, sans-serif;
   font-size: 16px;
   letter-spacing: 0.15px;
   width: 100%;
+  padding-right: 74px;
 }
 
 .instruments {
@@ -362,12 +362,12 @@ table {
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  margin-left: 72px;
-  margin-right: 72px;
-}
-.main__title {
-  margin-bottom: 56px;
+  padding: 72px;
+  padding: 72px;
+  box-sizing: border-box;
 }
 
 .navigation {
@@ -375,8 +375,9 @@ table {
   align-items: center;
   padding-top: 32px;
   padding-left: 76px;
-  padding-right: 124px;
+  padding-right: 76px;
   justify-content: space-between;
+  height: 96px;
 }
 .navigation__logo {
   left: 72px;

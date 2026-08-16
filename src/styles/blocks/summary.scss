@@ -4,11 +4,11 @@
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
-  padding: 24px;
   width: 100%;
   height: 416px;
   background-color: #FCFAEF;
   gap: 24px;
+
 
   &__text1 {
     font-family: Manrope, sans-serif;
@@ -19,6 +19,7 @@
     letter-spacing: 0;
     width: 100%;
     color: #1B2129;
+    padding-left: 73px;
   }
 
   &__text2 {
@@ -26,5 +27,6 @@
     font-size: 16px;
     letter-spacing: 0.15px;
     width: 100%;
+    padding-right: 74px;
   }
 }

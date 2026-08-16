@@ -5,20 +5,16 @@
   font-size: 36px;
   line-height: 100%;
   letter-spacing: 0;
-  vertical-align: middle;
   color: #fff;
   padding: 40px 20px;
   width: 100%;
+  max-width: 100vh;
 
   &--secondary {
-    font-family: Manrope, sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 100%;
-    letter-spacing: 0;
-    vertical-align: middle;
     color: #1B2129;
     padding-bottom: 56px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   &--third {
@@ -30,6 +26,7 @@
     vertical-align: middle;
     color: #1B2129;
     padding-bottom: 56px;
+    width: 100%;
   }
 
   &--fourth {
