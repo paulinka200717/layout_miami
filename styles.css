@@ -109,16 +109,6 @@ table {
   justify-content: space-between;
   box-sizing: border-box;
 }
-@media (min-width: 1020px) {
-  .header {
-    display: grid;
-    grid-template-columns: repeat(12, 63px);
-    grid-template-rows: auto 1fr;
-    column-gap: 24px;
-    padding-left: 120px;
-    padding-right: 120px;
-  }
-}
 .header__title {
   display: flex;
   margin: 0;
@@ -133,6 +123,22 @@ table {
   padding-bottom: 64px;
   padding-left: 72px;
   margin-top: auto;
+}
+@media (min-width: 1020px) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(12, 63px);
+    grid-template-rows: auto 1fr;
+    column-gap: 24px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .header__title {
+    grid-column: 1/6;
+    align-self: end;
+    padding-bottom: 64px;
+    padding-left: 0;
+  }
 }
 
 .items {
