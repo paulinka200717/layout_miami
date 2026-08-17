@@ -24,13 +24,36 @@
     &__icon {
     height: 32px;
     width: 32px;
-    transition: transform 0.3s, cursor 0.3s;
+
 
 
     &:hover {
-    cursor: url("../../images/Cursor-Mouse-Mice.png"), auto;
-    transform: scale(1.1);
-   }
+    cursor: url("/src/images/Cursor-Mouse-Mice.png");
 
+   }
+  }
+   @media (min-width: 1020px) {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: repeat(12, 63px);
+    column-gap: 24px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    &__logo {
+      grid-column: 1 / 4;
+      height: 24px;
+    }
+
+    &__icons {
+      grid-column: 11 / -1;
+
+      display: flex;
+      gap: 36px;
+      margin-left: 0;
+      justify-content: flex-end;
+    }
   }
 }
