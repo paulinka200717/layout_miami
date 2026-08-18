@@ -101,43 +101,41 @@ table {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
   min-height: 100vh;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: space-between;
   box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  grid-column: 1/-1;
 }
-.header__title {
-  display: flex;
-  margin: 0;
-  width: 100%;
-  box-sizing: border-box;
-  font-family: Manrope, sans-serif;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 100%;
-  letter-spacing: 0;
-  color: #fff;
-  padding-bottom: 64px;
-  padding-left: 72px;
-  margin-top: auto;
-}
-@media (min-width: 1020px) {
+@media (min-width: 1260px) {
   .header {
-    display: grid;
     grid-template-columns: repeat(12, 63px);
     grid-template-rows: auto 1fr;
     column-gap: 24px;
     padding-left: 120px;
     padding-right: 120px;
   }
+}
+.header__title {
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  color: #fff;
+  grid-column: 1/4;
+  align-self: end;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+@media (min-width: 1260px) {
   .header__title {
-    grid-column: 1/6;
-    align-self: end;
+    grid-column: 1/7;
+    padding-left: 120px;
     padding-bottom: 64px;
-    padding-left: 0;
   }
 }
 
@@ -386,50 +384,52 @@ table {
 }
 
 .navigation {
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
   padding-top: 32px;
-  padding-left: 76px;
-  padding-right: 76px;
-  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 96px;
+  box-sizing: border-box;
 }
 .navigation__logo {
-  left: 72px;
-  top: 36px;
+  grid-column: 1/2;
   height: 24px;
 }
 .navigation__icons {
+  grid-column: 2/3;
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   gap: 36px;
-  margin-left: auto;
 }
 .navigation__icon {
-  height: 32px;
   width: 32px;
+  height: 32px;
 }
 .navigation__icon:hover {
-  cursor: url("/src/images/Cursor-Mouse-Mice.png");
+  cursor: url("/src/images/Cursor-Mouse-Mice.png"), pointer;
 }
 @media (min-width: 1020px) {
   .navigation {
-    grid-column: 1/-1;
     display: grid;
+    grid-column: 1/-1;
     grid-template-columns: repeat(12, 63px);
     column-gap: 24px;
+    justify-content: center;
     padding-left: 0;
     padding-right: 0;
   }
   .navigation__logo {
-    grid-column: 1/4;
+    grid-column: 1/2;
     height: 24px;
   }
   .navigation__icons {
     grid-column: 11/-1;
-    display: flex;
     gap: 36px;
-    margin-left: 0;
-    justify-content: flex-end;
+    justify-content: end;
   }
 }
 

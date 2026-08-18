@@ -1,60 +1,59 @@
-  .navigation {
-    display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-left: 76px;
-    padding-right: 76px;
-    justify-content: space-between;
-    height: 96px;
+.navigation {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
 
+  padding-top: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
 
-    &__logo {
-    left: 72px;
-    top: 36px;
+  height: 96px;
+  box-sizing: border-box;
+
+  &__logo {
+    grid-column: 1 / 2;
     height: 24px;
-    }
-
-    &__icons {
-    display: flex;
-    gap: 36px;
-    margin-left: auto;
-
-    }
-
-    &__icon {
-    height: 32px;
-    width: 32px;
-
-
-
-    &:hover {
-    cursor: url("/src/images/Cursor-Mouse-Mice.png");
-
-   }
   }
 
-   @media (min-width: 1020px) {
-    grid-column: 1 / -1;
+  &__icons {
+    grid-column: 2 / 3;
 
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 36px;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+
+    &:hover {
+      cursor: url("/src/images/Cursor-Mouse-Mice.png"), pointer;
+    }
+  }
+
+  @media (min-width: 1020px) {
     display: grid;
+    grid-column: 1 / -1;
     grid-template-columns: repeat(12, 63px);
     column-gap: 24px;
+    justify-content: center;
 
     padding-left: 0;
     padding-right: 0;
 
     &__logo {
-      grid-column: 1 / 4;
+      grid-column: 1 / 2;
       height: 24px;
     }
 
     &__icons {
       grid-column: 11 / -1;
-
-      display: flex;
       gap: 36px;
-      margin-left: 0;
-      justify-content: flex-end;
+      justify-content: end;
     }
   }
 }
