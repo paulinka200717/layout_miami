@@ -5,16 +5,19 @@
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
-  width: 1px;
+  width: 100px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-left: 74px;
-  padding-right: 174px;
-  padding-bottom: 80px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 72px;
+  padding-right: 72px;
+
+
 
 
   &__input {

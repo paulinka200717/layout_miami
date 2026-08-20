@@ -1,8 +1,9 @@
 .navigation {
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto 1fr;
   column-gap: 20px;
+  grid-column: 1 / -1;
 
   padding-top: 32px;
   padding-left: 20px;
@@ -17,7 +18,7 @@
   }
 
   &__icons {
-    grid-column: 2 / 3;
+    grid-column: 3 / 4;
 
 
     display: flex;
