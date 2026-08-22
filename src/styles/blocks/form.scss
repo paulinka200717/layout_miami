@@ -77,4 +77,9 @@
     @include visually-hidden;
   }
 }
+
+  @media (min-width: 320px) and (max-width: 744px) {
+    padding: 50px 20px;
+
+}
 }

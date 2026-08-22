@@ -13,7 +13,8 @@
 
   &__logo {
     grid-column: 1 / 2;
-    height: 24px;
+    height: auto;
+    width: 100%;
     max-width: 100%;
     object-fit: contain;
   }
@@ -30,21 +31,19 @@
   &__icon {
     width: 24px;
     height: 24px;
-    flex-shrink: 0;
 
     &:hover {
       cursor: pointer;
     }
   }
 
-  @media (min-width: 320px) and (max-width: 744px) {
+  @media (min-width: 320px) and (max-width: 743px) {
     display: grid;
     grid-template-columns:1fr 1fr;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 27px;
     gap: 20px;
-    justify-content: center;
     align-items: start;
     justify-content: space-between;
 
@@ -54,12 +53,45 @@
 
    }
 
-   &__icons {
+
+   &__icon {
     max-height: 18px;
     max-width: 18px;
     gap: 27px
 
    }
+}
 
+  @media (min-width: 744px) and (max-width: 1260px) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 32px;
+
+
+    &__logo {
+     grid-column: 1 / 2;
+     display: block;
+     width: 152px;
+     height: 16px;
+
+     & img {
+     display: block;
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+     }
+    }
+
+    &__icons {
+     grid-column: 10 / 12;
+     max-height: 18px;
+     max-width: 18px;
+     gap: 27px;
+     padding-right: 36px;
+   }
+  }
 }
-}
+
+
+
+
