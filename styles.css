@@ -491,7 +491,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 12px;
+  gap: 27px;
   min-width: 0;
 }
 .navigation__icon {
@@ -560,7 +560,7 @@ table {
   transition: transform 0.3s ease-in-out;
 }
 .menu:target {
-  display: block;
+  display: flex;
   transform: translateX(0);
 }
 .menu__navigation {
@@ -569,10 +569,10 @@ table {
   justify-content: space-between;
   padding-bottom: 36px;
 }
-.menu__logo-image {
-  height: 24px;
-  width: auto;
-  padding-top: 36px;
+.menu__logo {
+  display: block;
+  height: 16px;
+  width: 100%;
 }
 .menu__icon-image {
   height: 32px;
@@ -607,6 +607,16 @@ table {
 }
 .menu__call-link:hover {
   cursor: url("/src/images/Cursor-Mouse-Mice.png"), auto;
+}
+@media (min-width: 320px) and (max-width: 743px) {
+  .menu {
+    display: none;
+    width: 100%;
+    padding: 20px;
+  }
+  .menu:target {
+    display: block;
+  }
 }
 
 .links {

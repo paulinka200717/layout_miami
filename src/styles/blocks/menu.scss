@@ -10,7 +10,7 @@
 
 
   &:target {
-    display: block;
+    display: flex;
     transform: translateX(0);
   }
 
@@ -22,10 +22,10 @@
     padding-bottom: 36px;
   }
 
-   &__logo-image {
-    height: 24px;
-    width: auto;
-    padding-top: 36px;
+  &__logo {
+    display: block;
+    height: 16px;
+    width: 100%;
   }
 
   &__icon-image {
@@ -68,4 +68,14 @@
     }
 
   }
+
+   @media (min-width: 320px) and (max-width: 743px) {
+    display: none;
+    width: 100%;
+    padding: 20px;
+
+    &:target {
+      display: block;
+    }
+}
 }
