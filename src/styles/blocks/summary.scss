@@ -1,9 +1,10 @@
 .summary {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   box-sizing: border-box;
   align-items: center;
-  height: 416px;
+  min-height: 416px;
   background-color: #FCFAEF;
   gap: 24px;
 

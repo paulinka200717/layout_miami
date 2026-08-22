@@ -14,7 +14,7 @@
 @import './blocks/links';
 
 
-.html {
+html {
   margin: 0;
   width: 100%;
   min-height: 100vh;
@@ -22,9 +22,10 @@
 
 }
 
-.body {
+body {
   margin: 0;
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
