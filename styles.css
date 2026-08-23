@@ -512,7 +512,7 @@ table {
     align-items: start;
     justify-content: space-between;
   }
-  .navigation__logo {
+  .navigation__logo img {
     max-height: 16px;
     max-width: 152px;
   }
