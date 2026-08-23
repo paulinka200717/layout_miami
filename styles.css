@@ -648,6 +648,41 @@ table {
   cursor: pointer;
 }
 
+.phone-hover {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.phone-hover__number {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+.phone-hover__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+.phone-hover__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.phone-hover:hover .phone-hover__number {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
 html {
   margin: 0;
   width: 100%;
