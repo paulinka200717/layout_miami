@@ -1,6 +1,8 @@
 .gallery {
   width: 100%;
   margin-bottom: 16px;
+  padding-left: 72px;
+  padding-right: 72px;
 
   &__title {
     font-family: Manrope, sans-serif;
@@ -26,6 +28,9 @@
   }
 
   @media (max-width: 743px) {
+    padding-left: 0;
+    padding-right: 0;
+
     &__pictures {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -40,25 +45,4 @@
       object-fit: cover;
     }
   }
-
-  @media (min-width: 744px) and (max-width: 1260px) {
-     &__pictures {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-
-      gap:20px;
-      padding: 0;
-    }
-
-
-    &__image {
-      width: 100%;
-      min-width: 498px;
-      min-height: 324px;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-    }
-
-
-}
 }

@@ -5,7 +5,9 @@
   column-gap: 12px;
   grid-column: 1 / -1;
 
-  padding: 16px 12px;
+  padding-top: 36px;
+  padding-right: 0;
+
   height: auto;
   min-height: 64px;
   width: 100%;
@@ -13,6 +15,7 @@
 
   &__logo {
     grid-column: 1 / 2;
+    padding-left: 0;
     height: auto;
     width: 100%;
     max-width: 100%;
@@ -27,6 +30,7 @@
     justify-content: flex-end;
     gap: 27px;
     min-width: 0;
+    padding-right: 72px;
   }
 
   &__icon {
@@ -42,7 +46,6 @@
     display: grid;
     grid-template-columns:1fr 1fr;
     padding-left: 20px;
-    padding-right: 20px;
     padding-top: 27px;
     gap: 20px;
     align-items: start;
@@ -60,9 +63,14 @@
     gap: 27px
 
    }
+
+   &__icons {
+    padding-right: 23px;
+    gap: 27px;
+   }
   }
 
-  @media (min-width: 744px) and (max-width: 1260px) {
+  @media (min-width: 1260px) {
     .navigation {
      display: grid;
      grid-template-columns: repeat(12, 1fr);
@@ -84,8 +92,6 @@
 
    &__icons {
      grid-column-start: 14;
-     padding-right: 120px;
-   }
 
   }
 }
@@ -93,3 +99,4 @@
 
 
 
+}

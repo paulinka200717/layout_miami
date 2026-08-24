@@ -6,25 +6,29 @@
   color: #fff;
   width: 100%;
   max-width: 100vh;
+  padding-left: 72px;
+  padding-right: 72px;
 
   &--secondary {
     color: #1B2129;
-    padding: 40px 20px;
+    padding-top: 120px;
+    padding-bottom: 56px;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    font-size: 32px;
+    font-size: 40px;
   }
 
   &--third {
     font-family: Manrope, sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 40px;
     line-height: 40px;
     letter-spacing: 0;
     vertical-align: middle;
     color: #1B2129;
     padding-bottom: 56px;
+    padding-left: 72px;
     padding-top: 60px;
     width: 100%;
   }
@@ -32,22 +36,23 @@
   &--fourth {
     font-family: Manrope, sans-serif;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 40px;
     letter-spacing: 0;
     color: #1B2129;
-    padding-left: 20px;
     padding-top: 64px;
-
 
   }
 
 
   @media (max-width: 743px) {
+    padding-left: 20px;
 
 
     &--secondary {
-      font-size: 32px;
+      padding-top: 64px;
       padding-left: 0;
+      font-size: 32px;
+
     }
 
     &--third {
@@ -56,18 +61,18 @@
     }
 
     &__fourth {
+      padding-left: 72px;
       padding-top: 64px;
       font-size: 32px;
     }
   }
 
 
-  @media (min-width: 744px) and (max-width: 1260px) {
+  @media (min-width: 1260) {
 
     &--secondary {
       grid-column: 1 / -1;
       margin-bottom: 32px;
-      font-family: Manrope;
       font-weight: 700;
       font-size: 48px;
       line-height: 48px;
