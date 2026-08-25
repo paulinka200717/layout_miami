@@ -2,8 +2,8 @@
   display: none;
   background-color: #F9F9F9;
   padding-top: 24px;
-  padding-left: 120px;
-  padding-right: 124px;
+  padding-left: 72px;
+  padding-right: 77px;
   min-height: 100vh;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
@@ -11,13 +11,14 @@
 
   &:target {
     display: flex;
+    flex-direction: column;
     transform: translateX(0);
   }
 
 
   &__navigation {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     padding-bottom: 36px;
   }
@@ -34,6 +35,7 @@
   }
 
   &__paragraph {
+    display: flex;
     font-family: Manrope, sans-serif;
     font-weight: 700;
     font-style: Bold;
@@ -52,6 +54,7 @@
 
   &__call-link {
     padding-bottom: 4px;
+    padding-top: 16px;
     text-decoration: none;
     border-bottom: 1px solid #1B2129;
     font-family: Manrope, sans-serif;
@@ -60,6 +63,7 @@
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 2px;
+    width: 160px;
     text-transform: uppercase;
     color: #1B2129;
 
@@ -76,6 +80,17 @@
 
     &:target {
       display: block;
+    }
+
+    &__logo-image {
+      height: 16px;
+      width: 152px;
+
+    }
+
+    &__icon-image {
+      height: 16px;
+      width: 16px;
     }
 }
 }
