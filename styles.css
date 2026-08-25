@@ -608,6 +608,7 @@ table {
   align-items: start;
   justify-content: space-between;
   padding-bottom: 36px;
+  padding-top: 36px;
 }
 .menu__logo {
   display: block;
@@ -659,6 +660,9 @@ table {
   }
   .menu:target {
     display: block;
+  }
+  .menu__navigation {
+    padding-top: 28px;
   }
   .menu__logo-image {
     height: 16px;

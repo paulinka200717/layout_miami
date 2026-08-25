@@ -21,6 +21,7 @@
     align-items: start;
     justify-content: space-between;
     padding-bottom: 36px;
+    padding-top: 36px;
   }
 
   &__logo {
@@ -32,6 +33,7 @@
   &__icon-image {
     height: 32px;
     width: 32px;
+
   }
 
   &__paragraph {
@@ -80,6 +82,11 @@
 
     &:target {
       display: block;
+    }
+
+    &__navigation {
+      padding-top: 28px;
+
     }
 
     &__logo-image {
