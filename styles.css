@@ -524,10 +524,15 @@ table {
   }
 }
 @media (min-width: 1260px) {
-  .main__content {
+  .main .section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+    width: 100%;
+  }
+  .main__content {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 

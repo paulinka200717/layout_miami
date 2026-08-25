@@ -18,13 +18,22 @@
   }
 
   @media (min-width: 1260px) {
-    &__content {
+
+    .section {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
+      width: 100%;
+
 
     }
+
+    &__content {
+       padding-left: 120px;
+       padding-right: 120px;
+
+    }
+   }
   }
-}
 
 
