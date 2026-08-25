@@ -146,7 +146,7 @@ table {
   position: relative;
   justify-content: space-between;
   padding-left: 72px;
-  min-height: 100vh;
+  min-height: 100svh;
   width: 100%;
   box-sizing: border-box;
 }
