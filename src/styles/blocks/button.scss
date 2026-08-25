@@ -42,11 +42,13 @@
   }
 
    @media (max-width: 743px) {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
 
     &--primary {
       height: 60px;
+      margin-left: 0;
+      margin-right: 0;
     }
 }
 }

@@ -102,12 +102,12 @@ table {
   }
   .title--secondary {
     padding-top: 64px;
-    padding-left: 0;
+    padding-left: 20px;
     font-size: 32px;
   }
   .title--third {
     font-size: 34px;
-    padding-left: 0;
+    padding-left: 20px;
   }
   .title__fourth {
     padding-left: 72px;
@@ -140,14 +140,13 @@ table {
   background-color: blue;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   display: flex;
   flex-direction: column;
   position: relative;
   justify-content: space-between;
-  padding-left: 72px;
-  min-height: 100vh;
-  width: 100%;
+  padding-left: 0px;
+  height: 100vh;
   box-sizing: border-box;
 }
 .header__title {
@@ -158,15 +157,15 @@ table {
   color: #fff;
   margin-right: auto;
   padding-bottom: 64px;
+  padding-left: 72px;
 }
 @media (max-width: 743px) {
   .header {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: auto 1fr;
-    padding-left: 20px;
-    padding-right: 20px;
     gap: 20px;
+    max-height: 100%;
     align-items: start;
   }
   .header__title {
@@ -198,10 +197,11 @@ table {
 }
 
 .items {
+  display: flex;
+  flex-direction: column;
   font-family: Manrope, sans-serif;
   font-weight: 700;
   width: 100%;
-  height: 757;
   opacity: 1;
   border-radius: 4px;
   box-sizing: border-box;
@@ -281,12 +281,17 @@ table {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .gallery__image {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
+  }
+  .gallery__title {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -327,11 +332,13 @@ table {
 }
 @media (max-width: 743px) {
   .button {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .button--primary {
     height: 60px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -490,10 +497,7 @@ table {
 .main {
   display: flex;
   flex-direction: column;
-  max-width: 100vh;
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
   box-sizing: border-box;
 }
 .main__content {
@@ -502,8 +506,8 @@ table {
 }
 @media (max-width: 743px) {
   .main__content {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -527,6 +531,7 @@ table {
   width: 100%;
   max-width: 100%;
   object-fit: contain;
+  padding-left: 72px;
 }
 .navigation__icons {
   grid-column: 3/4;
@@ -558,13 +563,16 @@ table {
     max-height: 16px;
     max-width: 152px;
   }
+  .navigation__logo {
+    padding-left: 0;
+  }
   .navigation__icon {
-    max-height: 18px;
-    max-width: 18px;
+    height: 18px;
+    width: 18px;
     gap: 27px;
   }
   .navigation__icons {
-    padding-right: 23px;
+    padding-right: 30px;
     gap: 27px;
   }
 }
