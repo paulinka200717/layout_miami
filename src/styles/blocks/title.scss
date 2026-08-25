@@ -94,4 +94,19 @@
 
 
   }
+
+  @media (min-width: 1260px) {
+    &--secondary {
+      font-size: 48px;
+      padding-left: 120px;
+    }
+
+    &--third {
+      padding-left: 120px;
+    }
+
+    &__fourth {
+      padding-left: 120px;
+    }
+  }
 }

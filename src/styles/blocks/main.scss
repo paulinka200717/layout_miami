@@ -14,8 +14,17 @@
     &__content {
     padding-left: 20px;
     padding-right: 20px;
-}
-}
+    }
+  }
+
+  @media (min-width: 1260px) {
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+
+    }
+  }
 }
 
 

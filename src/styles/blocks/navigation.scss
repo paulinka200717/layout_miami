@@ -82,9 +82,14 @@
      padding-top: 36px;
 
 
+
     &__logo img {
      max-height: 24px;
      max-width: 228px;
+    }
+
+    &__logo {
+     padding-left: 0;
     }
 
 
@@ -97,6 +102,7 @@
 
    &__icons {
      grid-column-start: 14;
+     padding-right: 0;
 
   }
 }
