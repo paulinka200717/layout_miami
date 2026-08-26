@@ -7,16 +7,29 @@
 
 
 
-  @media (max-width: 743px) {
+ @media (max-width: 743px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-bottom: 64px;
-  }
+ }
 
+  @media (min-width: 1260px) {
+
+    &--products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      width: 100%;
+    }
+
+    &--contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+   }
 }
-
-
 
 
 

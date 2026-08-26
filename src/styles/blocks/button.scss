@@ -41,7 +41,7 @@
     margin-right: 0;
   }
 
-   @media (max-width: 743px) {
+  @media (max-width: 743px) {
     margin-left: 20px;
     margin-right: 20px;
 
@@ -51,4 +51,14 @@
       margin-right: 0;
     }
 }
+
+  @media (min-width: 1260px) {
+   margin-right: 816px;
+   margin-left: 120px;
+  }
+
+  &--primary {
+    margin: 0;
+
+  }
 }

@@ -25,7 +25,11 @@
 
    @media (max-width: 743px) {
     padding: 20px;
+   }
 
 
-}
+  @media (min-width: 1260px) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }

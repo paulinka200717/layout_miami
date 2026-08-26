@@ -62,7 +62,6 @@ table {
   letter-spacing: 0;
   color: #fff;
   width: 100%;
-  max-width: 100vh;
   padding-left: 72px;
   padding-right: 72px;
 }
@@ -141,8 +140,9 @@ table {
   }
   .title--third {
     padding-left: 120px;
+    padding-right: 0;
   }
-  .title__fourth {
+  .title--fourth {
     padding-left: 120px;
   }
 }
@@ -307,6 +307,12 @@ table {
     padding-right: 20px;
   }
 }
+@media (min-width: 1260px) {
+  .gallery {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
 
 .button {
   font-family: Manrope, sans-serif;
@@ -353,6 +359,15 @@ table {
     margin-left: 0;
     margin-right: 0;
   }
+}
+@media (min-width: 1260px) {
+  .button {
+    margin-right: 816px;
+    margin-left: 120px;
+  }
+}
+.button--primary {
+  margin: 0;
 }
 
 .summary {
@@ -403,6 +418,18 @@ table {
     padding: 0 24px 34px 20px;
   }
 }
+@media (min-width: 1260px) {
+  .summary__text1 {
+    margin: 0 auto;
+    text-align: start;
+    align-items: center;
+  }
+  .summary__text2 {
+    margin: 0 auto;
+    text-align: start;
+    align-items: center;
+  }
+}
 
 .instruments {
   display: flex;
@@ -441,6 +468,12 @@ table {
 @media (max-width: 743px) {
   .adress {
     padding: 20px;
+  }
+}
+@media (min-width: 1260px) {
+  .adress {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
@@ -506,6 +539,12 @@ table {
     padding: 50px 20px;
   }
 }
+@media (min-width: 1260px) {
+  .form {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
 
 .main {
   display: flex;
@@ -524,12 +563,6 @@ table {
   }
 }
 @media (min-width: 1260px) {
-  .main .section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    width: 100%;
-  }
   .main__content {
     padding-left: 120px;
     padding-right: 120px;
