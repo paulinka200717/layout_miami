@@ -365,9 +365,9 @@ table {
     margin-right: 816px;
     margin-left: 120px;
   }
-}
-.button--primary {
-  margin: 0;
+  .button--primary {
+    margin: 0;
+  }
 }
 
 .summary {
@@ -787,7 +787,7 @@ table {
   white-space: nowrap;
   opacity: 0;
   visibility: hidden;
-  transform: translateX(10px);
+  transform: translateX(calc(-100% - 20px));
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
 .phone-hover__icon {
@@ -805,7 +805,7 @@ table {
 .phone-hover:hover .phone-hover__number {
   opacity: 1;
   visibility: visible;
-  transform: translateX(0);
+  transform: translateX calc(-100% - 20px);
 }
 
 body {

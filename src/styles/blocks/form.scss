@@ -19,8 +19,6 @@
   padding-top: 56px;
 
 
-
-
   &__input {
     border-radius: 8px;
     background-color: #F9F9F9;
@@ -39,9 +37,6 @@
       line-height: 140%;
       letter-spacing: 0.15px;
       color: #7E7E83;
-
-
-
     }
 
   }
@@ -67,10 +62,6 @@
       letter-spacing: 0.15px;
       color: #7E7E83;
     }
-
-
-
-
   }
 
   &__label {
@@ -81,14 +72,10 @@
 
 @media (max-width: 743px) {
    padding: 50px 20px;
-
 }
 
 @media (min-width: 1260px) {
-
   padding-left: 120px;
   padding-right: 120px;
-
-
 }
 }

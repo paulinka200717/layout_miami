@@ -13,7 +13,7 @@
 
     opacity: 0;
     visibility: hidden;
-    transform: translateX(10px);
+    transform: translateX(calc(-100% - 20px));
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
   }
 
@@ -34,6 +34,6 @@
   &:hover &__number {
     opacity: 1;
     visibility: visible;
-    transform: translateX(0);
+    transform: translateX (calc(-100% - 20px));
   }
 }
