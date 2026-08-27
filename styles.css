@@ -773,39 +773,59 @@ table {
   cursor: pointer;
 }
 
-.phone-hover {
+.phone {
   display: flex;
+  gap: 20px;
+}
+.phone__label {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1B2129;
   position: absolute;
-  align-items: center;
-  gap: 12px;
-  cursor: pointer;
+  transform: translateX(-120%);
 }
-.phone-hover__number {
-  font-size: 14px;
-  font-weight: 600;
-  color: #000;
+.phone:not(:hover) .phone__label {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
   white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(calc(-100% - 20px));
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  width: 100px;
 }
-.phone-hover__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-}
-.phone-hover__icon img {
+
+.section {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 56px;
 }
-.phone-hover:hover .phone-hover__number {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX calc(-100% - 20px);
+@media (max-width: 743px) {
+  .section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+}
+@media (min-width: 1260px) {
+  .section--products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+  }
+  .section--contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
 }
 
 body {

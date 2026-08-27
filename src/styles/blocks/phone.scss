@@ -1,0 +1,25 @@
+.phone {
+  display: flex;
+  gap: 20px;
+
+  &__label {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #1B2129;
+    position: absolute;
+    transform: translateX(calc(-100% - 20%));
+
+
+  }
+
+  &:not(:hover) .phone__label {
+    @include visually-hidden();
+  }
+}
