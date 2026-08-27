@@ -19,6 +19,15 @@
   margin-left: 72px;
   margin-right: 72px;
 
+  &:hover {
+    background-color: #1B2129;
+  }
+
+
+  &:active {
+    color: #1b2129;
+  }
+
 
 
   &--primary {

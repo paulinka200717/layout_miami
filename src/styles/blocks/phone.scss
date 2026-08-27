@@ -1,25 +1,33 @@
 .phone {
   display: flex;
   gap: 20px;
+  position: relative;
 
   &__label {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
+    font-family: Inter, sans-serif;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
-
     letter-spacing: 2px;
     text-transform: uppercase;
-
     color: #1B2129;
+
     position: absolute;
-    transform: translateX(calc(-100% - 20%));
+    right: calc(100% + 20px);
 
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(20px);
 
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      visibility 0.3s ease;
   }
 
-  &:not(:hover) .phone__label {
-    @include visually-hidden();
+  &:hover .phone__label {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
   }
 }

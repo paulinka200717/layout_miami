@@ -46,12 +46,10 @@
   @media (max-width: 743px) {
     padding-left: 20px;
 
-
     &--secondary {
       padding-top: 64px;
       padding-left: 20px;
       font-size: 32px;
-
     }
 
     &--third {
@@ -66,32 +64,6 @@
     }
   }
 
-
-  @media (min-width: 1260) {
-
-    &--secondary {
-      grid-column: 1 / -1;
-      margin-bottom: 32px;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 48px;
-
-    }
-
-    &--third {
-      grid-column: 1 / -1;
-      font-size: 48px;
-      padding-left: 0;
-    }
-
-    &__fourth {
-      grid-column: 1 / -1;
-      font-size: 48px;
-      padding-top: 64px;
-
-    }
-  }
-
  @media (min-width: 1260px) {
 
     &--secondary {
@@ -102,12 +74,10 @@
     &--third {
       padding-left: 120px;
       padding-right: 0;
-
     }
 
     &--fourth {
       padding-left: 120px;
-
     }
   }
 }
