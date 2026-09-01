@@ -320,13 +320,13 @@ table {
   text-align: center;
   margin-left: 72px;
   margin-right: 72px;
+  cursor: pointer;
 }
 .button:hover {
   background-color: #1B2129;
   color: #FFF;
 }
 .button:active {
-  color: #1b2129;
   color: #FFF;
 }
 .button--primary {
@@ -342,10 +342,8 @@ table {
   font-style: Bold;
   font-size: 16px;
   letter-spacing: 0;
-  margin-top: 32px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 80px;
+  margin: 32px 0 80px;
+  cursor: pointer;
 }
 @media (max-width: 743px) {
   .button {
@@ -360,7 +358,7 @@ table {
 }
 @media (min-width: 1260px) {
   .button {
-    width: calc(33.333% - 120px);
+    width: calc(34% - 120px);
     margin-left: 120px;
     padding-left: 48px;
     padding-right: 48px;
@@ -381,7 +379,7 @@ table {
   box-sizing: border-box;
 }
 .summary__text1 {
-  font-family: "Manrope", sans-serif;
+  font-family: Manrope, sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
@@ -390,7 +388,7 @@ table {
   margin: 0;
 }
 .summary__text2 {
-  font-family: "Manrope", sans-serif;
+  font-family: Manrope, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.15px;
@@ -470,7 +468,7 @@ table {
     padding-right: 0;
   }
   .adress__label {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .adress__content {
     margin-bottom: 24px;
