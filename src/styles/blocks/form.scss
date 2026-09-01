@@ -16,7 +16,6 @@
   box-sizing: border-box;
   padding-left: 72px;
   padding-right: 72px;
-  padding-top: 56px;
 
 
   &__input {
@@ -89,11 +88,12 @@
 }
 
 @media (max-width: 743px) {
-   padding: 50px 20px;
+   padding-left: 20px;
+   padding-right: 20px;
 }
 
 @media (min-width: 1260px) {
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 0;
+
 }
 }

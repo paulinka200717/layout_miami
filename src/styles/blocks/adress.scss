@@ -1,7 +1,10 @@
 .adress {
-   padding: 60px 174px 120px 74px;
+    padding-left: 72px;
+
+
 
   &__label {
+    display: block;
     font-family: Manrope, sans-serif;
     font-weight: 400;
     font-style: Regular;
@@ -9,10 +12,12 @@
     line-height: 140%;
     letter-spacing: 0.15px;
     color: #9FADC2;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
+
   }
 
   &__content {
+    display:block;
     font-family: Manrope, sans-serif;
     font-weight: 400;
     font-style: Regular;
@@ -20,16 +25,31 @@
     line-height: 140%;
     letter-spacing: 0.15px;
     color: #3E3E3E;
-    padding-bottom: 24px;
+    text-decoration: none;
+    margin-bottom: 24px;
+
   }
 
    @media (max-width: 743px) {
-    padding: 20px;
+    padding-left: 20px;
    }
 
 
+
   @media (min-width: 1260px) {
-    padding-left: 120px;
-    padding-right: 120px;
+    margin-bottom: 24px;
+    padding-left: 0;
+    padding-right: 0;
+
+    &__label {
+      margin-bottom: 0px;
+
+    }
+
+    &__content {
+      margin-bottom: 24px;
+
+    }
+
   }
 }

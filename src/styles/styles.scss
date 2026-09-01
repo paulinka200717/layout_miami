@@ -16,7 +16,9 @@
 @import './blocks/section';
 
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 
 body {
