@@ -436,6 +436,9 @@ table {
   text-decoration: none;
   margin-bottom: 24px;
 }
+.adress__content:hover {
+  color: #888;
+}
 @media (max-width: 743px) {
   .adress {
     padding-left: 20px;
