@@ -624,18 +624,22 @@ table {
 }
 
 .menu {
-  display: none;
+  display: flex;
+  flex-direction: column;
   background-color: #F9F9F9;
   padding-top: 24px;
   padding-left: 72px;
   padding-right: 77px;
-  min-height: 100vh;
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
 }
-.menu:target {
-  display: flex;
-  flex-direction: column;
+.menu--open {
   transform: translateX(0);
 }
 .menu__navigation {
@@ -685,16 +689,12 @@ table {
   color: #1B2129;
 }
 .menu__call-link:hover {
-  cursor: url("/src/images/Cursor-Mouse-Mice.png"), auto;
+  cursor: pointer;
 }
 @media (max-width: 743px) {
   .menu {
-    display: none;
     width: 100%;
     padding: 20px;
-  }
-  .menu:target {
-    display: block;
   }
   .menu__navigation {
     padding-top: 28px;
@@ -707,6 +707,10 @@ table {
     height: 16px;
     width: 16px;
   }
+}
+
+body.menu-open {
+  overflow: hidden;
 }
 
 .links {
