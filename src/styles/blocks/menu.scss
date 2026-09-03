@@ -8,6 +8,7 @@
   height: 100vh;
   overflow-y: auto;
 
+
   position: fixed;
   top: 0;
   left: 0;
@@ -22,14 +23,16 @@
 
   &__navigation {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
     padding-bottom: 36px;
     padding-top: 36px;
+    gap: 104px
   }
 
   &__logo {
-    display: block;
+    display: flex;
+    align-items: center;
     height: 16px;
     width: 100%;
   }

@@ -42,13 +42,18 @@
     line-height: 140%;
     letter-spacing: 0;
     width: 100%;
-    padding-bottom: 56px;
     box-sizing: border-box;
+    padding-bottom: 40px;
     }
 
     &__image {
       width: 100%;
       padding-bottom: 24px;
+      transition: transform 0.3s ease;
+
+       &:hover {
+       transform: scale(1.05);
+      }
     }
 
 
