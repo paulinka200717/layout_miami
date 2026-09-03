@@ -4,15 +4,16 @@
     padding-left: 72px;
 
   &__label {
-    display: block;
     @include mixins.text-style(14px, 400, 140%, #9FADC2);
-    margin-bottom: 8px;
 
+    margin-bottom: 8px;
+    display: block;
   }
 
   &__content {
-    display: block;
     @include mixins.text-style(16px, 400, 140%, #3E3E3E);
+
+    display: block;
     letter-spacing: 0.15px;
     color: #3E3E3E;
     text-decoration: none;
@@ -26,7 +27,6 @@
   @media (max-width: 743px) {
     padding-left: 20px;
   }
-
 
   @media (min-width: 1260px) {
     margin-bottom: 24px;

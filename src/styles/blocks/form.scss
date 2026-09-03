@@ -74,6 +74,7 @@
 
     &::placeholder {
      @include mixins.text-style(14px, 400, 140%, #7E7E83);
+
      letter-spacing: 0.15px;
     }
   }
