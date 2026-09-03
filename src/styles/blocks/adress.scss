@@ -1,42 +1,31 @@
+@use "../utils/mixins" as mixins;
+
 .adress {
     padding-left: 72px;
 
-
-
   &__label {
     display: block;
-    font-family: Manrope, sans-serif;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 14px;
-    line-height: 140%;
-    letter-spacing: 0.15px;
-    color: #9FADC2;
+    @include mixins.text-style(14px, 400, 140%, #9FADC2);
     margin-bottom: 8px;
 
   }
 
   &__content {
-    display:block;
-    font-family: Manrope, sans-serif;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 16px;
-    line-height: 140%;
+    display: block;
+    @include mixins.text-style(16px, 400, 140%, #3E3E3E);
     letter-spacing: 0.15px;
     color: #3E3E3E;
     text-decoration: none;
     margin-bottom: 24px;
 
-     &:hover {
-    color: #888;
-   }
+    &:hover {
+      color: #888;
+    }
   }
 
-   @media (max-width: 743px) {
+  @media (max-width: 743px) {
     padding-left: 20px;
-   }
-
+  }
 
 
   @media (min-width: 1260px) {
@@ -53,6 +42,6 @@
       margin-bottom: 24px;
 
     }
-
   }
 }
+

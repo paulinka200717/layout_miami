@@ -1,51 +1,43 @@
+@use "../utils/mixins" as mixins;
+
 
 .title {
-  font-family: Manrope, sans-serif;
-  font-weight: 600;
-  letter-spacing: 0;
-  color: #fff;
-  width: 100%;
+  @include text-style(40px, 600, normal, #fff);
 
+  letter-spacing: 0;
+  width: 100%;
   padding-right: 72px;
 
   &--secondary {
-    color: #1B2129;
+    @include text-style(40px, 600, normal, #1B2129);
+
     padding-top: 120px;
     padding-bottom: 56px;
     padding-left: 72px;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    font-size: 40px;
   }
 
   &--third {
-    font-family: Manrope, sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 40px;
+    @include text-style(40px, 700, 40px, #1B2129);
+
     letter-spacing: 0;
     vertical-align: middle;
-    color: #1B2129;
     padding-top: 50px;
     padding-bottom: 56px;
     padding-left: 72px;
-
     width: 100%;
   }
 
   &--fourth {
-    font-family: Manrope, sans-serif;
-    font-weight: 700;
-    font-size: 40px;
+    @include text-style(40px, 700, normal, #1B2129);
+
     letter-spacing: 0;
-    color: #1B2129;
     padding-top: 120px;
     padding-left: 72px;
     padding-bottom: 56px;
-
   }
-
 
   @media (max-width: 743px) {
     padding-left: 20px;

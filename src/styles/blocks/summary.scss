@@ -1,3 +1,5 @@
+@use "../utils/mixins" as mixins;
+
 .summary {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -8,21 +10,16 @@
   box-sizing: border-box;
 
   &__text1 {
-    font-family: Manrope, sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 100%;
+    @include text-style(40px, 700, 100%, #1B2129);
+
     letter-spacing: 0;
-    color: #1B2129;
     margin: 0;
   }
 
   &__text2 {
-    font-family: Manrope, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+    @include text-style(16px, 400, 1.5, #1B2129);
+
     letter-spacing: 0.15px;
-    color: #1B2129;
     margin: 0;
   }
 

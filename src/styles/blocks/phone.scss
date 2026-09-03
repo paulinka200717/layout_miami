@@ -1,3 +1,5 @@
+@use "../utils/mixins" as mixins;
+
 .phone {
   display: flex;
   gap: 20px;
@@ -5,13 +7,10 @@
   align-items: center;
 
   &__label {
-    font-family: Inter, sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 16px;
+    @include text-style(12px, 700, 16px, #1B2129);
+
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #1B2129;
 
     position: absolute;
     right: calc(100% + 10px);
