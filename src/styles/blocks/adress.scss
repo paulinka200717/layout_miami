@@ -2,6 +2,7 @@
 
 .adress {
     padding-left: 72px;
+    margin-bottom: 120px;
 
   &__label {
     @include mixins.text-style(14px, 400, 140%, #9FADC2);
